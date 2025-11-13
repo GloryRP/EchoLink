@@ -7,8 +7,6 @@ export default function LandingPage() {
     const router = useNavigate();
 
     return (
-         <div style={{ width: "100%", maxWidth: "500px", margin: "0 auto" }}>
-
         <div className='landingPageContainer'>
             <nav>
                 <div className='navHeader'>
@@ -50,7 +48,6 @@ export default function LandingPage() {
 
 
 
-        </div>
         </div>
     )
 }

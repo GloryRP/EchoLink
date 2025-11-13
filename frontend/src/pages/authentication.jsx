@@ -67,8 +67,6 @@ export default function Authentication() {
 
 
     return (
-        <div style={{ width: "100%", maxWidth: "500px", margin: "0 auto" }}>
-
         <ThemeProvider theme={defaultTheme}>
             <Grid container component="main" sx={{ height: '100vh' }}>
                 <CssBaseline />
@@ -100,7 +98,7 @@ export default function Authentication() {
                             <LockOutlinedIcon />
                         </Avatar>
 
-                        
+
                         <div>
                             <Button variant={formState === 0 ? "contained" : ""} onClick={() => { setFormState(0) }}>
                                 Sign In
@@ -173,6 +171,5 @@ export default function Authentication() {
             />
 
         </ThemeProvider>
-        </div>
     );
 }
