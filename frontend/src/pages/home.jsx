@@ -9,6 +9,7 @@ import axios from 'axios';
 import server from '../environment';
 
 function HomeComponent() {
+    
     const navigate = useNavigate();
     const { addToUserHistory } = useContext(AuthContext);
 
@@ -18,7 +19,7 @@ function HomeComponent() {
     const [hostMeetingCode, setHostMeetingCode] = useState("");
 
     const token = localStorage.getItem("token"); // token read once
-
+     
     // Join an existing meeting
     const handleJoinVideoCall = async () => {
         if (!meetingCode.trim()) return alert("Enter a meeting code!");
@@ -69,7 +70,9 @@ function HomeComponent() {
     };
 
     return (
-        <>
+
+        <> <div style={{ width: "100%", maxWidth: "500px", margin: "0 auto" }}>
+
             <div className="navBar">
                 <div style={{ display: "flex", alignItems: "center" }}>
                     <h2>Apna Video Call</h2>
@@ -123,8 +126,10 @@ function HomeComponent() {
                     <img srcSet='/logo3.png' alt="Logo" />
                 </div>
             </div>
+             </div>
         </>
     );
+   
 }
 
 export default withAuth(HomeComponent);

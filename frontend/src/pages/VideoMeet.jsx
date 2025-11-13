@@ -694,6 +694,8 @@ useEffect(() => {
   const translatedStyle = { fontSize: 15, fontWeight: 700, marginTop: 4 };
 
   return (
+    <div style={{ width: "100%", maxWidth: "500px", margin: "0 auto" }}>
+
     <div className={styles.meetVideoContainer}>
       {askUsername ? (
         <div style={{ padding: 20 }}>
@@ -970,6 +972,7 @@ useEffect(() => {
 
         </>
       )}
+    </div>
     </div>
   );
 }
